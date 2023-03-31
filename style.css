@@ -60,3 +60,12 @@ body{
     background-image: url("checkbox-active.png");
     background-repeat: no-repeat;
     background-size: contain;
+}
+.register-wrapper{
+    width: 400px;
+    height: 350px;
+    padding: 40px;
+    margin:auto;
+    box-sizing: border-box;
+    transform:translateY(10px);
+}
