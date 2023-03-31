@@ -1,16 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IoTBay</title>
-</head>
-<body>
-   <!-- <form action="/register.html"> -->
-    <h2>View Products</h2>
-    <button onclick="window.location.href = '/register.html';">Register</button>
-    <button onclick="window.location.href = '/login.html';">Login</button>
-</form>
-</body>
+<html>
+    <head>
+        <style>
+            *{
+                list-style: none;
+            }
+            .header{
+                width: 100%;
+                height: 80px;
+                background-color: aqua;
+                display: block;
+            }
+            .inner-header{
+                background-color: red;
+                width:1000px;
+                height:100%;
+                display:block;
+                margin:0 auto;
+            }
+            .logo-container{
+                height: 100%;
+                display: table;
+                float:left;
+                background-color: yellow;
+            }
+            .navigation{
+                background-color:blue;
+                float:right;
+                height:100%;
+            }
+            .navigation a{
+                height:100%;
+                display: table;
+                float: left;
+                padding:0px 20px;
+                vertical-align:middle;
+            }
+            .navigation a li{
+                display: table-cell;
+                vertical-align:middle;
+            }
+
+        </style>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+            <!-- action"welcome.jsp" >-->
+            <div class="header">
+                <div class="inner-header">
+                    <div class="logo-container">
+                        <h1>MY SITE</h1>
+                    </div>
+                    <div class="navigation">
+                        <ul>
+                            <a>Register</a>
+                            <a>Login</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" id="password" name="password" required/>
+                <br>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <input type="radio" id="female" name="gender" value="Female">
+                <br>
+                <div class="buttons"><button type="button">Login</button></div>
+                <div class="buttons"><button type="button">Register</button></div>
+            </form>
+    </body>
 </html>
