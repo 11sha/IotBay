@@ -61,11 +61,17 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
 }
-.register-wrapper{
-    width: 400px;
-    height: 350px;
-    padding: 40px;
-    margin:auto;
-    box-sizing: border-box;
-    transform:translateY(10px);
+.body-register{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.register-container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
 }
