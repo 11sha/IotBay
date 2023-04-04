@@ -61,7 +61,7 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
 }
-.body-register{
+.register {
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -74,4 +74,8 @@ body{
     background: #fff;
     padding: 25px 30px;
     border-radius: 5px;
+}
+
+.details{
+    
 }
