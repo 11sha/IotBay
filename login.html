@@ -8,18 +8,18 @@
 
     <link rel = "stylesheet" href = "style.css">
 </head>
-<body bgcolor= #cceeff>
+<body class="login" bgcolor= #cceeff>
 
     <div class= "login-wrapper">
       
       <h2>Login</h2>
-      <form method="get" action="#" id="login-form">
+      <form method="get" action="main.html" id="login-form">
         <input type= "text" name="userName" placeholder="email">
         <input type= "text" name="password" name="userPassword" placeholder="password">
         <label for= "remember-check">
             <input type = "checkbox" id="remember-check"> remember me 
             </label>
-            <input type = "submit" value = "Login" onclick = "location.href = 'main.html'">
+            <input type = "submit" value = "Login" onclick = "window.location.href = 'main.html'">
             
       </form>
     </div>
