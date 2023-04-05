@@ -12,7 +12,6 @@
                 display: block;
             }
             .inner-header{
-                background-color: red;
                 width:1000px;
                 height:100%;
                 display:block;
@@ -22,10 +21,8 @@
                 height: 100%;
                 display: table;
                 float:left;
-                background-color: yellow;
             }
             .navigation{
-                background-color:blue;
                 float:right;
                 height:100%;
             }
@@ -48,11 +45,24 @@
                 height: 200px;
                 border:3px solid #000000
             }
+            .upperbodycontainer
+            {
+                display: flex;
+                background-image: url("Photos/Landing-Page.jpg");
+                height: 70vh;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .text{
+                flex-basis: 600px;
+            }
             .bodycontainer{
-                display: grid;
+                display: flex;
+                justify-content: space-between;
                 height: 100vh;
-                grid-template-columns: auto auto;
-                grid-template-rows: auto auto;
+                flex-wrap: wrap;
+                gap: 10vh;
+                background-color: aqua;
             }
         </style>
         <link rel="stylesheet" href="style.css">
@@ -73,6 +83,13 @@
                             <a href="login.html">Login</a>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <div class="upperbodycontainer">
+                <div class="text">
+                    <h1>What are IOT devices?</h1>
+                    <h3>IoT devices are pieces of hardware, such as sensors, 
+                        actuators, gadgets, appliances, or machines that are embedded with sensors, software, and other technologies</h3>
                 </div>
             </div>
             <h1 style="text-align: center">FEATURED PRODUCTS</h1>
