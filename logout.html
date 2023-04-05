@@ -1,6 +1,72 @@
+<!--will have to do something in backend that sets login to logged out-->
+
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        *{
+            list-style: none;
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+            background-color: aqua;
+            display: block;
+        }
+        .inner-header{
+            width:1000px;
+            height:100%;
+            display:block;
+            margin:0 auto;
+        }
+        .logo-container{
+            height: 100%;
+            display: table;
+            float:left;
+        }
+        .navigation{
+            float:right;
+            height:100%;
+        }
+        .navigation a{
+            height:100%;
+            display: table;
+            float: left;
+            padding:0px 20px;
+            vertical-align:middle;
+        }
+        .navigation a li{
+            color: black;
+            display: table-cell;
+            vertical-align:middle;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            width: 300px; 
+            height: 200px;
+            border:3px solid #000000
+        }
+        .upperbodycontainer
+        {
+            display: flex;
+            background-image: url("Photos/Landing-Page.jpg");
+            height: 70vh;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .text{
+            flex-basis: 600px;
+        }
+        .bodycontainer{
+            display: flex;
+            justify-content: space-between;
+            height: 100vh;
+            flex-wrap: wrap;
+            gap: 10vh;
+            background-color: aqua;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
