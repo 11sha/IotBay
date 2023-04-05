@@ -1,16 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IoTBay</title>
-</head>
-<body>
-   <!-- <form action="/register.html"> -->
-    <h2>View Productzzz</h2>
-    <button onclick="window.location.href = '/register.html';">Register</button>
-    <button onclick="window.location.href = '/login.html';">Login</button>
-</form>
-</body>
+<html>
+    <head>
+        <style>
+            *{
+                list-style: none;
+            }
+            .header{
+                width: 100%;
+                height: 80px;
+                background-color: aqua;
+                display: block;
+            }
+            .inner-header{
+                background-color: red;
+                width:1000px;
+                height:100%;
+                display:block;
+                margin:0 auto;
+            }
+            .logo-container{
+                height: 100%;
+                display: table;
+                float:left;
+                background-color: yellow;
+            }
+            .navigation{
+                background-color:blue;
+                float:right;
+                height:100%;
+            }
+            .navigation a{
+                height:100%;
+                display: table;
+                float: left;
+                padding:0px 20px;
+                vertical-align:middle;
+            }
+            .navigation a li{
+                color: black;
+                display: table-cell;
+                vertical-align:middle;
+            }
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                width: 300px; 
+                height: 200px;
+                border:3px solid #000000
+            }
+            .bodycontainer{
+                display: grid;
+                height: 100vh;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+            }
+        </style>
+        <link rel="stylesheet" href="style.css">
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no">
+    </head>
+    <body>
+            <!-- action"welcome.jsp" >-->
+            <div class="header">
+                <div class="inner-header">
+                    <div class="logo-container">
+                        <h1>MY SITE</h1>
+                    </div>
+                    <div class="navigation">
+                        <ul>
+                            <a href="register.html">Register</a>
+                            <a href="login.html">Login</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h1 style="text-align: center">FEATURED PRODUCTS</h1>
+            <br>
+            <div class="bodycontainer">
+                    <div>
+                        <img src="Photos/Smart-TV.jpg" alt="Smart-TV">
+                        <p>Smart TV</p>
+                    </div>
+                    <div>
+                        <img src="Photos/Smart-Speaker.jpg" alt="Smart Speaker">
+                        <p>Smart Speaker</p>
+                    </div>
+                    <div>
+                        <img src="Photos/Smart-Lights.jpg" alt="Smart Lights">
+                        <p>Smart Lights</p>
+                    </div>
+                    <div>
+                        <img src="Photos/Smart-Thermostat.jpg" alt="Smart Thermostat">
+                        <p>Smart Thermostat</p>
+                    </div>
+            </div>
+    </body>
 </html>
