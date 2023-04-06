@@ -8,6 +8,7 @@
             .header{
                 width: 100%;
                 height: 80px;
+                background: linear-gradient(135deg, #cceeff, #00498c);
                 display: block;
             }
             .inner-header{
@@ -42,7 +43,8 @@
                 max-height: 100%;
                 width: 300px; 
                 height: 200px;
-                border:3px solid #000000
+                /*border:3px solid #000000*/
+                border-radius: 5px;
             }
             .upperbodycontainer
             {
@@ -61,7 +63,37 @@
                 height: 100vh;
                 flex-wrap: wrap;
                 gap: 10vh;
+                background: linear-gradient(135deg, #cceeff, #00498c);
             }
+            .header .index-register-button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #cceeff, #00498c);
+}
+.header .index-register-button input:hover{
+    background: linear-gradient(135deg, #00498c, #cceeff);
+}
+.header .index-login-button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #cceeff, #00498c);
+}
+.header .index-login-button input:hover{
+    background: linear-gradient(135deg, #00498c, #cceeff);
+}
+
         </style>
         <link rel="stylesheet" href="style.css">
         <title>TODO supply a title</title>
@@ -69,17 +101,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no">
     </head>
     <body>
-            <!-- action"welcome.jsp" >-->
             <div class="header">
                 <div class="inner-header">
                     <div class="logo-container">
                         <h1>MY SITE</h1>
                     </div>
                     <div class="navigation">
-                        <ul>
+                        <div class="index-login-button">
+                            <input type="submit" value="Login" onclick = "window.location.href = 'login.html'">
+                        </div>
+                        <div class="index-register-button">
+                            <input type="submit" value="Register" onclick = "window.location.href = 'register.html'">
+                        </div>
+                     <!-- <u1>
                             <a href="register.html">Register</a>
                             <a href="login.html">Login</a>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
@@ -94,19 +131,19 @@
             <br>
             <div class="bodycontainer">
                     <div>
-                        <img src="Photos/Smart-TV.jpg" alt="Smart-TV">
+                        <img src="Photos/Smart-TV.png" alt="Smart-TV">
                         <p>Smart TV</p>
                     </div>
                     <div>
-                        <img src="Photos/Smart-Speaker.jpg" alt="Smart Speaker">
+                        <img src="Photos/Smart-Speaker.png" alt="Smart Speaker">
                         <p>Smart Speaker</p>
                     </div>
                     <div>
-                        <img src="Photos/Smart-Lights.jpg" alt="Smart Lights">
+                        <img src="Photos/Smart-Lights.png" alt="Smart Lights">
                         <p>Smart Lights</p>
                     </div>
                     <div>
-                        <img src="Photos/Smart-Thermostat.jpg" alt="Smart Thermostat">
+                        <img src="Photos/Smart-Thermostat.png" alt="Smart Thermostat">
                         <p>Smart Thermostat</p>
                     </div>
             </div>
