@@ -4,68 +4,39 @@
 <html>
 <head>
     <style>
-        *{
-            list-style: none;
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        .centre {
+            font-family: 'Inter', sans-serif;
+            vertical-align: center;
+            text-align: center;
         }
-        h1 {
-            width: 100%;
-            height: 80px;
-            color: aqua;
-            vertical-align: middle;
-        }
-        .inner-header{
-            width:1000px;
-            height:100%;
-            display:block;
-            margin:0 auto;
-        }
-        .logo-container{
-            height: 100%;
-            display: table;
-            float:left;
-        }
-        .navigation{
-            float:right;
-            height:100%;
-        }
-        .navigation a{
-            height:100%;
-            display: table;
-            float: left;
-            padding:0px 20px;
-            vertical-align:middle;
-        }
-        .navigation a li{
-            color: black;
-            display: table-cell;
-            vertical-align:middle;
-        }
-        .upperbodycontainer
-        {
-            display: flex;
-            background-image: url("Photos/Landing-Page.jpg");
-            height: 70vh;
-            justify-content: flex-end;
-            align-items: center;
-        }
-        .text{
-            flex-basis: 600px;
-        }
-        .bodycontainer{
-            display: flex;
-            justify-content: space-between;
-            height: 100vh;
-            flex-wrap: wrap;
-            gap: 10vh;
-            background-color: aqua;
-        }
-    </style>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-<h1>Logout Page</h1>
-<p>You have been logged out.</p> <!--Add name from beans data?-->
-    <button onclick="window.location.href = 'main.html';">MAIN PAGE</button>
+        h1 {
+            height: 80px;
+            color: #00498c;
+        }
+
+        button {
+            background-color: #00498c;
+            font-family: 'Inter', sans-serif;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body bgcolor= #cceeff>
+    <img src="Photos/UTS-Logo.png" alt="Logo" style="width:200px;">
+    <div class="centre">
+    <h1>You have been logged out.</h1> <!--Add name from beans data?-->
+        <button onclick="window.location.href = 'index.html';">Proceed back to the home page</button> <!--when I say home page I mean index.html-->
+    </div>
 </body>
 </html>
