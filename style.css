@@ -1,3 +1,4 @@
+/*=====================Login Section==============================*/
 *{
     margin: 0;
     padding:0;
@@ -71,13 +72,15 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+/*=====================Register Section==============================*/
 .register {
     font-family: 'Roboto', sans-serif;
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    /*padding: 10px;*/
     background: linear-gradient(135deg, #cceeff, #00498c);
     /*background: linear-gradient(135deg, #71b7e6, #9b59b6);*/
 }
@@ -131,6 +134,19 @@
    border-bottom-width: 2px;
    transition: all 0.3s ease;
 }
+
+/* Come back to this
+.user-details .mail-select input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px; 
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+ } */
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
     border-color: #00498c;
@@ -184,3 +200,55 @@
 .register-form .register-button input:hover{
     background: linear-gradient(135deg, #00498c, #cceeff);
 }
+
+
+.register-buttons-container{ 
+position: absolute;
+margin-bottom: 700px;
+margin-left: 800px;
+    
+    
+} 
+.home-button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #00498c;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: transparent;
+    border-color: transparent;
+    margin-bottom: 750px;
+    /*background: linear-gradient(135deg, #070707, #00498c); */
+}
+.home-button input:hover{
+    background: linear-gradient(135deg, #00498c, #070707);
+}
+.register-buttons-container::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 3px;
+    background: #00498c
+}
+
+.return-login-button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #00498c;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: transparent;
+    border-color: transparent;
+    /*background: linear-gradient(135deg, #070707, #00498c); */
+    margin-bottom: 750px;
+}
+.return-login-button input:hover{
+    background: linear-gradient(135deg, #00498c, #070707);
+}
+/*=====================Index Section==============================*/

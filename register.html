@@ -10,6 +10,14 @@
 </head>
 
 <body class="register">
+    <!--<div class="register-buttons-container" > -->
+        <div class="home-button">
+            <input type ="submit" value = "Home" onclick = "window.location.href = 'index.html'"> 
+        </div>
+        <div class="return-login-button">
+            <input type ="submit" value = "Login" onclick = "window.location.href = 'login.html'"> 
+        </div>
+   <!-- </div> -->
     <div class= "register-container">
         <h2>Registration</h2>
         <form method="get" action="#" class="register-form">
@@ -25,14 +33,16 @@
                 <div class="input-box">
                     <span class="details">Email </span>
                     <input type="email" placeholder="Enter your email address" maxlength = "20" class="check" required>
-                        <span class = "emailInt" id = "emailBox">
+                    <!-- Come Back To This-->
+                    <!--   <span class = "emailInt" id = "emailBox">
                         <span> @ </span>
-                        <select id = "mail_select">
+                        <select id = "mail-select">
                         <option> choose email</option>
                         <option> gmail.com</option>
                         <option> outlook.com</option>
                         <option> yahoo.com</option>
                         <option> student.uts.edu.au</option>
+                </div> -->
                 </div>
                 <div class="input-box">
                     <span class="details">Password</span>
@@ -63,9 +73,10 @@
                     </div>
                 </div>
             <div class="register-button">
-                <input type ="submit" value = "Register" onclick = "window.location.href = 'main.html'"> 
+                <input type ="submit" value = "Register" onclick = "window.location.href = 'main.html'" > 
             </div>
     </form>
-</div>       
+</div> 
 </body>
+
 </html>
