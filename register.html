@@ -10,17 +10,9 @@
 </head>
 
 <body class="register">
-    <!--<div class="register-buttons-container" > -->
-        <div class="home-button">
-            <input type ="submit" value = "Home" onclick = "window.location.href = 'index.html'"> 
-        </div>
-        <div class="return-login-button">
-            <input type ="submit" value = "Login" onclick = "window.location.href = 'login.html'"> 
-        </div>
-   <!-- </div> -->
     <div class= "register-container">
         <h2>Registration</h2>
-        <form method="get" action="#" class="register-form">
+        <form action="home.html" method="POST" class="register-form"> <!--don't want to use get because passwords are not safe-->
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">First Name</span>
@@ -33,16 +25,14 @@
                 <div class="input-box">
                     <span class="details">Email </span>
                     <input type="email" placeholder="Enter your email address" maxlength = "20" class="check" required>
-                    <!-- Come Back To This-->
-                    <!--   <span class = "emailInt" id = "emailBox">
+                        <span class = "emailInt" id = "emailBox">
                         <span> @ </span>
-                        <select id = "mail-select">
+                        <select id = "mail_select">
                         <option> choose email</option>
                         <option> gmail.com</option>
                         <option> outlook.com</option>
                         <option> yahoo.com</option>
                         <option> student.uts.edu.au</option>
-                </div> -->
                 </div>
                 <div class="input-box">
                     <span class="details">Password</span>
@@ -73,10 +63,15 @@
                     </div>
                 </div>
             <div class="register-button">
-                <input type ="submit" value = "Register" onclick = "window.location.href = 'main.html'" > 
+                <input type ="submit" value = "Register" onclick = "window.location.href = 'main.html'"> 
             </div>
     </form>
-</div> 
-</body>
 
+    <!-- PERI TEST -->
+    <!-- <script>
+        const form = document.getElementById('form');
+        const firstName = document.getElementById('form');
+    </script> -->
+</div>       
+</body>
 </html>
