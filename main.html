@@ -5,10 +5,41 @@ possibly displays if user has -->
 <html lang="en">
 <link rel="stylesheet" href="style.css">
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        .centre {
+            font-family: 'Inter', sans-serif;
+            vertical-align: center;
+            text-align: center;
+        }
+
+        h1 {
+            height: 80px;
+            color: #00498c;
+        }
+
+        button {
+            background-color: #00498c;
+            font-family: 'Inter', sans-serif;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+    </style>
     <title>Main Page</title>
 </head>
-<body>
-    <h1>Welcome to IoT Bay, %name%!</h1>
-        <button onclick="window.location.href = 'index.html';">Proceed to browse products</button>
+<body bgcolor= #cceeff>
+    <img src="Photos/UTS-Logo.png" alt="Logo" style="width:200px;">
+    <div class="centre">
+        <h1>Welcome to IoT Bay, %name%!</h1>
+            <button onclick="window.location.href = 'index.html';">Proceed to browse products</button>
+    </div>
 </body>
 </html>
