@@ -16,6 +16,7 @@ possibly displays if user has -->
         h1 {
             height: 80px;
             color: #00498c;
+            display: inline;
         }
 
         button {
@@ -25,32 +26,40 @@ possibly displays if user has -->
             color: white;
             padding: 15px 32px; 
             text-align: center;
-            display: inline-block;
             font-size: 16px;
             margin: 4px 2px;
             cursor: pointer;
             border-radius: 5px;
+            vertical-align: center;
         }
 
-        .inline {
+        .top-bar {
             display: inline-block;
+            max-width: 1140px;
+            margin-right: 8px;
         }
 
         .logout-button {
-            float: right;
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+
+        .browse-button {
+            margin: 30px 2px;
         }
         
     </style>
     <title>Main Page</title>
 </head>
 <body bgcolor= #cceeff>
-    <div class="inline">
-        <img src="Photos/IoTBay-Logo.png" alt="Logo" style="width:200px;">
-        <button class="logout-button" onclick="window.location.href = 'logout.html';">Log Out</button>
+    <div class="top-bar">
+        <img src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;">
+        <button class="logout-button" align="right" onclick="window.location.href = 'logout.html';">Log Out</button>
     </div>
     <div class="centre">
-        <h1>Welcome to IoT Bay, <h1 id="first-name"></h1> </h1>
-        <button onclick="window.location.href = 'index.html';">Proceed to browse products</button>
+        <div><h1>Welcome to IoT Bay, </h1><h1 id="first-name"></h1><h1>!</h1></div>
+        <button class="browse-button" onclick="window.location.href = 'index.html';">Proceed to browse products</button>
     </div>
 
     <script>
