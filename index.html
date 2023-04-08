@@ -2,8 +2,10 @@
 <html>
     <head>
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
             *{
                 list-style: none;
+                font-family: 'Inter', sans-serif;
             }
             .header{
                 width: 100%;
@@ -75,6 +77,7 @@
     border-radius: 5px;
     letter-spacing: 1px;
     background: linear-gradient(135deg, #cceeff, #00498c);
+    cursor: pointer;
 }
 .header .index-register-button input:hover{
     background: linear-gradient(135deg, #00498c, #cceeff);
@@ -89,6 +92,7 @@
     border-radius: 5px;
     letter-spacing: 1px;
     background: linear-gradient(135deg, #cceeff, #00498c);
+    cursor: pointer;
 }
 .header .index-login-button input:hover{
     background: linear-gradient(135deg, #00498c, #cceeff);
@@ -113,7 +117,7 @@
         <div class="header">
                 <div class="inner-header">
                     <div class="logo-container">
-                        <h1>MY SITE</h1>
+                        <h1>IoT Bay</h1>
                     </div>
                     <div class="navigation">
                         <div class="index-login-button">
@@ -121,6 +125,7 @@
                         </div>
                         <div class="index-register-button">
                             <input type="submit" value="Register" onclick = "window.location.href = 'register.html'">
+                            <input type="submit" value="Logout" onclick = "window.location.href = 'logout.html'"> <!--conditional login/logout buttons-->
                         </div>
                      <!-- <u1>
                             <a href="register.html">Register</a>
