@@ -12,11 +12,11 @@
 <body class="register">
     <div class= "register-container">
         <h2>Registration</h2>
-        <form action="home.html" method="POST" class="register-form"> <!--don't want to use get because passwords are not safe-->
+        <form id="form" class="register-form"> <!--don't want to use get for passwords its not safe-->
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">First Name</span>
-                    <input type="text" placeholder="Enter your first name" required>
+                    <input id="firstName" type="text" placeholder="Enter your first name" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Last Name</span>
@@ -63,15 +63,28 @@
                     </div>
                 </div>
             <div class="register-button">
-                <input type ="submit" value = "Register" onclick = "window.location.href = 'main.html'"> 
+                <button type ="submit">Register</button>
+                <!-- <input type ="submit" value = "Register" onclick = "window.location.href = 'main.html'">  -->
             </div>
     </form>
+</div>
 
     <!-- PERI TEST -->
-    <!-- <script>
+    <script>
         const form = document.getElementById('form');
-        const firstName = document.getElementById('form');
-    </script> -->
-</div>       
+        const firstName = document.getElementById('firstName');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const firstNameValue = firstName.value;
+            
+            // writing string data to local storage
+            localStorage.setItem('first-name', firstNameValue);
+
+            window.location.href = 'main.html';
+        });
+    </script>
+
 </body>
 </html>
