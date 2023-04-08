@@ -13,10 +13,15 @@ possibly displays if user has -->
             text-align: center;
         }
 
-        h1 {
+        h1, h2 {
             height: 80px;
             color: #00498c;
             display: inline;
+        }
+
+        p {
+            text-align: left;
+            padding: 10px;
         }
 
         button {
@@ -48,6 +53,16 @@ possibly displays if user has -->
         .browse-button {
             margin: 30px 2px;
         }
+
+        .details-box {
+            max-width: 700px;
+            width: 40%;
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 30px;
+        }
         
     </style>
     <title>Main Page</title>
@@ -59,6 +74,14 @@ possibly displays if user has -->
     </div>
     <div class="centre">
         <div><h1>Welcome to IoT Bay, </h1><h1 id="first-name"></h1><h1>!</h1></div>
+        <div class="details-box">
+            <h2>Your Details:</h2>
+            <p><br>First Name: </p>
+            <p>Last Name: </p>
+            <p>Email: </p>
+            <p>Phone Number: </p>
+            <p>Gender: </p>
+        </div>
         <button class="browse-button" onclick="window.location.href = 'index.html';">Proceed to browse products</button>
     </div>
 
