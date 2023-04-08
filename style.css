@@ -1,9 +1,10 @@
 /*=====================Login Section==============================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 *{
     margin: 0;
     padding:0;
     box-sizing:none;
-
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -27,7 +28,6 @@
     height: 350px;
     padding: 40px;
     box-sizing: border-box;
-    
 }
 
 .login-wrapper > h2{
@@ -84,6 +84,18 @@
     background: linear-gradient(135deg, #cceeff, #00498c);
     /*background: linear-gradient(135deg, #71b7e6, #9b59b6);*/
 }
+
+#register-button {
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .register-container{
     max-width: 700px;
     width: 100%;
@@ -182,6 +194,7 @@
 .register-form input[type="radio"]{
     display: none;
 }
+
 .register-form .register-button{
     height: 45px;
     margin: 45px 0;
@@ -197,8 +210,10 @@
     letter-spacing: 1px;
     background: linear-gradient(135deg, #cceeff, #00498c);
 }
+
 .register-form .register-button input:hover{
     background: linear-gradient(135deg, #00498c, #cceeff);
+    background-color: #00498c;
 }
 
 
