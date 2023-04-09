@@ -76,8 +76,8 @@
 /*=====================Register Section==============================*/
 .register {
     font-family: 'Roboto', sans-serif;
-    position: relative;
-    display: flex;
+    /* position: relative; */
+    /* display: flex; */
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -86,9 +86,14 @@
     /*background: linear-gradient(135deg, #71b7e6, #9b59b6);*/
 }
 
-.register .top-bar{
-    margin-bottom: 600px;
-    
+.top-bar {
+    display: inline-block;
+    max-width: 1140px;
+    margin-right: 8px;
+}
+
+#logo-button {
+    cursor: pointer;
 }
 
 /*#register-button { Changed the button to the previous style (down below V)
@@ -104,11 +109,12 @@
 
 .register-container{
     max-width: 700px;
-    width: 100%;
+    width: 80%;
     background: #fff;
     padding: 25px 30px;
     border-radius: 5px;
-    
+    margin: auto;
+    margin-top: 30px;
 }
 
 .register-container .title{
