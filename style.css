@@ -76,6 +76,7 @@
 /*=====================Register Section==============================*/
 .register {
     font-family: 'Roboto', sans-serif;
+    position: relative;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -85,7 +86,12 @@
     /*background: linear-gradient(135deg, #71b7e6, #9b59b6);*/
 }
 
-#register-button {
+.register .top-bar{
+    margin-bottom: 600px;
+    
+}
+
+/*#register-button { Changed the button to the previous style (down below V)
     color: black;
     padding: 15px 32px;
     text-align: center;
@@ -94,7 +100,7 @@
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
-}
+} */
 
 .register-container{
     max-width: 700px;
@@ -102,6 +108,7 @@
     background: #fff;
     padding: 25px 30px;
     border-radius: 5px;
+    
 }
 
 .register-container .title{
@@ -199,7 +206,7 @@
     height: 45px;
     margin: 45px 0;
 }
-.register-form .register-button input{
+/*.register-form .register-buttons .register-button input{ <-- Currently Unused
     height: 100%;
     width: 100%;
     outline: none;
@@ -211,12 +218,28 @@
     background: linear-gradient(135deg, #cceeff, #00498c);
 }
 
-.register-form .register-button input:hover{
+.register-form .register-buttons .register-button input:hover{
+    background: linear-gradient(135deg, #00498c, #cceeff);
+    background-color: #00498c;
+} */
+
+#register-button{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #cceeff, #00498c);
+}
+
+#register-button:hover{
     background: linear-gradient(135deg, #00498c, #cceeff);
     background-color: #00498c;
 }
-
-
+/* Not used
 .register-buttons-container{ 
 position: absolute;
 margin-bottom: 700px;
@@ -236,7 +259,7 @@ margin-left: 800px;
     background: transparent;
     border-color: transparent;
     margin-bottom: 750px;
-    /*background: linear-gradient(135deg, #070707, #00498c); */
+    /*background: linear-gradient(135deg, #070707, #00498c); 
 }
 .home-button input:hover{
     background: linear-gradient(135deg, #00498c, #070707);
@@ -260,10 +283,10 @@ margin-left: 800px;
     letter-spacing: 1px;
     background: transparent;
     border-color: transparent;
-    /*background: linear-gradient(135deg, #070707, #00498c); */
+    /*background: linear-gradient(135deg, #070707, #00498c); 
     margin-bottom: 750px;
 }
 .return-login-button input:hover{
-    background: linear-gradient(135deg, #00498c, #070707);
+    background: linear-gradient(135deg, #00498c, #070707); 
 }
 /*=====================Index Section==============================*/
