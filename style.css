@@ -239,6 +239,8 @@
     border-radius: 5px;
     letter-spacing: 1px;
     background: linear-gradient(135deg, #cceeff, #00498c);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #register-button:hover{
