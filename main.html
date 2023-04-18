@@ -75,8 +75,8 @@ possibly displays if user has -->
     <div class="centre">
         <div><h1>Welcome to IoT Bay, </h1><h1 id="first-name"></h1><h1>!</h1></div>
         <div class="details-box">
-            <h2>Your Details:</h2>
-            <p><br>First Name: </p><p id="first-name"></p>
+            <h2>Your Details:</h2><br>
+            <p>First Name: </p><p id="first-name1"></p>
             <p>Last Name: </p><p id="last-name"></p>
             <p>Email: </p><p id="email"></p>
             <p>Phone Number: </p><p id="phone"></p>
@@ -91,6 +91,7 @@ possibly displays if user has -->
         const phone = localStorage.getItem('phone');
 
         document.getElementById('first-name').textContent = firstName;
+        document.getElementById('first-name1').textContent = firstName;
         document.getElementById('last-name').textContent = lastName;
         document.getElementById('email').textContent = email;
         document.getElementById('phone').textContent = phone;
