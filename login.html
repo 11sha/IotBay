@@ -7,6 +7,8 @@
     <title>Login</title>
 
     <link rel = "stylesheet" href = "style.css">
+    
+    
 </head>
 
 <body class="login" bgcolor= #cceeff>
@@ -19,44 +21,42 @@
         <label for= "remember-check">
             <input type = "checkbox" id="remember-check"> remember me 
             </label>
+    
             <input type = "submit" value = "Login" onclick = "window.location.href = 'main.html'">  
       </form>
     </div>
     
-    
     <script>
 
-    const id = document.getElementById('id')
-    const password = document.getElementById('password')
-    const login = document.getElementById('login')
-     let errStack = 0;
-
-    login.addEventListener('click', () => 
-   { 
-    if (id.value == 'SandySarray') {
-        if (password.value == '1234') {
-            alert('login completed!')
-        }
-        else {
-            alert('please check your ID and PW again!')
-            errStack ++;
-        }
-    }
-    else {
-        alert('This account does not exist.')
-    }
-
-    if (errStack >= 3) {
-        alert('You got the password wrong more than three times.')
-    }
-  })
-
-</script>
-
-
-    
-    
-    
+      const id = document.getElementById('id');
+      const password = document.getElementById('password');
+      const login = document.getElementById('login');
+      let errStack = 0;
+  
+      login.addEventListener('click', () => 
+     { 
+      if (id.value == 'Group3') {
+          if (password.value == '1234') {
+              alert('login completed!');
+          }
+          else {
+              alert('please check your ID and PW again!');
+              errStack ++;
+          }
+      }
+      else {
+          alert('This account does not exist.');
+      }
+  
+      if (errStack >= 3) {
+          alert('You got the password wrong more than three times.');
+      }
+    })
+  
+  </script>
+  
+  
+  
 </body>
 </html>
 
