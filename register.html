@@ -378,9 +378,11 @@ localStorage.setItem('first-name', firstNameValue);
             localStorage.setItem('last-name', lastNameValue);
             localStorage.setItem('email', emailValue);
             localStorage.setItem('phone', phoneValue);
-
-    if (count === 6) {
+console.log(count);
+    if (count >= 6) {
     window.location.href = 'main.html';
+    } else {
+        count = 0;
     }
 };
 
