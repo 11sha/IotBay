@@ -174,7 +174,8 @@
  } */
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
-    border-color: #00498c;
+    /*border-color: #00498c;*/
+    outline: 0;
 }
 .register-form .gender-details .gender-title{
     font-size: 20px;
@@ -246,6 +247,20 @@
 #register-button:hover{
     background: linear-gradient(135deg, #00498c, #cceeff);
     background-color: #00498c;
+}
+
+.user-details .input-box.success input {
+    border-color: #09c372;
+}
+
+.user-details .input-box.error input {
+    border-color: #ff3860;
+}
+
+.user-details .input-box .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
 }
 /* Not used
 .register-buttons-container{ 

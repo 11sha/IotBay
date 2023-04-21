@@ -6,46 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
 </head>
 
+<body>
+    <img id="logo-button" src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;" onclick="window.location.href = 'index.html';" >
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <table>
+                <tr>
+                    <td>
+            <div class="input-control">
+                <label for="firstName">First name</label>
+                <input id="firstName" name="firstName" type="text" placeholder="Enter your first name">
+                <div class="error"></div>
+            </div>
+            </td>
+            <td>
+            <div class="input-control">
+                <label for="lastName">Last name</label>
+                <input id="lastName" name="lastName" type="text" placeholder="Enter your last name">
+                <div class="error"></div>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" placeholder="Enter your email address">
+                <div class="error"></div>
+            </div>
+            </td>
+            <td>
+            <div class="input-control">
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="number" placeholder="Enter your mobile number">
+                <div class="error"></div>
+            </div>
+            </td>
+            </tr>
+            <td>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password" placeholder="Enter your password">
+                <div class="error"></div>
+            </div>
+            </td>
+            <td>
+            <div class="input-control">
+                <label for="password2">Confirm Password</label>
+                <input id="password2"name="password2" type="password" placeholder="Confirm your password">
+                <div class="error"></div>
+            </div>
+            </td>
+        </table>
+        <div class="gender-details">
+            <input type="radio" name="gender" id="dot-male" >
+            <input type="radio" name="gender" id="dot-female"  >
+            <span class="gender-title">Gender</span>
+            <div class="category">
+                <label for="dot-male">
+                    <span class="dot one"></span>
+                    <span class="gender">Male</span>
+                </label>
+                <label for="dot-female">
+                    <span class="dot two"></span>
+                    <span class="gender">Female</span>
+                </label>
+                
+            </div>
+            <div class="error"></div>
+        </div>
+        <label for="existing-login">Already have an account?</label> 
+        <a href ='login.html'> Login</a>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+
+
+<!--
 <body class="register">
     <div class="top-bar">
         <img id="logo-button" src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;" onclick="window.location.href = 'index.html';" >
     </div>
     <div class= "register-container">
         <h2>Registration</h2>
-        <form id="form" class="register-form"> <!--don't want to use get for passwords its not safe // No worries :) JM-->
+        <form id="form" class="register-form"> don't want to use get for passwords its not safe // No worries :) JM
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">First Name</span>
-                    <input id="firstName" type="text" placeholder="Enter your first name" required>
+                    <input id="firstName" type="text" placeholder="Enter your first name" >
+                    <div class="error"></div>
                 </div>
                 <div class="input-box">
                     <span class="details">Last Name</span>
-                    <input id="lastName" type="text" placeholder="Enter your last name" required>
+                    <input id="lastName" type="text" placeholder="Enter your last name" >
+                    <div class="error"></div>
                 </div>
                 <div class="input-box">
-                    <span class="details">Email </span>
-                    <input id="email" type="email" placeholder="Enter your email address" maxlength = "40" class="check" required>
-                        <span class = "emailInt" id = "emailBox">
+                     <span class="details">Email </span>
+                    <label for="email">Email </label>
+                    <input id="email" type="text" placeholder="Enter your email address" maxlength = "40" >
+                     email type changed from email to text for now as email type has limited customisation
+                            <div class="error"></div>
                 </div>
                 <div class="input-box">
                     <span class="details">Password</span>
-                    <input id="password" type="password" placeholder="Enter your password" required>
+                    <input id="password" type="password" placeholder="Enter your password" >
+                    <div class="error"></div>
                 </div>
                 <div class="input-box">
                     <span class="details">Confirm Password</span>
-                    <input type="password" placeholder="Re-enter your password" required>
+                    <input type="password" placeholder="Re-enter your password" >
+                    <div class="error"></div>
                 </div>
                 <div class="input-box">
                     <span class="details">Phone Number</span>
-                    <input id="phone" type="number" placeholder="Enter your mobile number" min="0400000000" max="0499999999" maxlength="10" required>
+                    <input id="phone" type="number" placeholder="Enter your mobile number" min="0400000000" max="0499999999" maxlength="10" >
+                    <div class="error"></div>
                 </div>
             </div>
                 <div class="gender-details">
-                    <input type="radio" name="gender" id="dot-male" required >
-                    <input type="radio" name="gender" id="dot-female" required >
+                    <input type="radio" name="gender" id="dot-male" >
+                    <input type="radio" name="gender" id="dot-female"  >
                     <span class="gender-title">Gender</span>
                     <div class="category">
                         <label for="dot-male">
@@ -58,28 +144,105 @@
                         </label>
                     </div>
                 </div>
-            <div class="register-buttons">
+             <div class="register-buttons">
                 <button id="register-button" type ="submit">Register</button>
-            </div>
+            </div> 
+            <button type ="submit">Register</button>
     </form>
-</div>
+</div> -->
 
-    <!-- PERI TEST -->
-    <script>
+    <!-- PERI TEST (edited by James)-->
+   <script>
+    /*
         const form = document.getElementById('form');
         const firstName = document.getElementById('firstName');
         const lastName = document.getElementById('lastName');
         const email = document.getElementById('email');
         const phone = document.getElementById('phone');
+        const password = document.getElementById('password');
+        const password2 = document.getElementById('password2');
 
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            const firstNameValue = firstName.value;
-            const lastNameValue = lastName.value;
-            const emailValue = email.value;
-            const phoneValue = phone.value;
+            validateInputs();
+
+        });
+
+        const setError = (element, message) => {
+            const inputControl = element.parentElement;
+            const errorDisplay = inputControl.querySelector('.error');
+
+            errorDisplay.innerText = message;
+            inputControl.classList.add('error');
+            inputControl.classList.remove('success')
+        }
+
+        const setSuccess = element => {
+            const inputControl = element.parentElement;
+            const errorDisplay = inputControl.querySelector('.error');
+
+            errorDisplay.innerText = '';
+            inputControl.classList.add('success');
+            inputControl.classList.remove('error');
+
+        };
+
+        const isValidEmail = email => {
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        const validateInputs = () => {
+
+            const firstNameValue = firstName.value.trim();
+            const lastNameValue = lastName.value.trim();
+            const emailValue = email.value.trim();
+            const phoneValue = phone.value.trim();
+            const passwordValue = password.value.trim();
+            const password2Value = password2.value.trim();
+
+            if(firstNameValue === '') {
+                setError(firstName, 'First name is required');
+            } else {
+                setSuccess(firstName);
+            }
+
+            if(lastNameValue === '') {
+                setError(lastName, 'Last name is required');
+            } else {
+                setSuccess(lastName);
+            }
+
+            if(emailValue === '') {
+                setError(email, 'Email is required');
+            } else if (!isValidEmail(emailValue)) {
+                setError(email, 'Provide a valid email address');
+            } else {
+                setSuccess(email);
+            }
+
+            if(passwordValue === '') {
+                setError(password, 'Password is required');
+            } else if (passwordValue.length < 8) {
+                setError(password, 'Password must be at least 8 characters.');
+            } else {
+                setSuccess(password);
+            }
+
+            if(password2Value === '') {
+                setError(password2, 'Please confirm your password');
+            } else if (password2Value !== passwordValue) {
+                setError(password2, 'Passwords do not match');
+            } else {
+                setSuccess(password);
+            }
             
+            
+
+
+
+
             // writing string data to local storage
             localStorage.setItem('first-name', firstNameValue);
             localStorage.setItem('last-name', lastNameValue);
@@ -87,8 +250,143 @@
             localStorage.setItem('phone', phoneValue);
 
             window.location.href = 'main.html';
-        });
-    </script>
+        }; 
+        */
+const form = document.getElementById('form');
+const firstName = document.getElementById('firstName');
+const lastName = document.getElementById('lastName');
+const email = document.getElementById('email');
+const phone = document.getElementById('phone');
+const password = document.getElementById('password');
+const password2 = document.getElementById('password2');
+const dotMale = document.getElementById('dot-male');
+const dotFemale = document.getElementById('dot-female');
+
+var count = 0;
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+   // validateGender();
+});
+
+//dotMale.addEventListener('change', validateGender);
+//dotFemale.addEventListener('change', validateGender);
+
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+}
+
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+    
+};
+
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+const validateGender= () => {
+    if (!dotMale.checked && !dotFemale.checked) {
+        setError(dotMale, 'Gender is required');
+        setError(dotFemale, '');
+    } else {
+        setSuccess(genderMale);
+        setSuccess(genderFemale);
+        count ++;
+    }
+};
+
+const validateInputs = () => {
+    const firstNameValue = firstName.value.trim();
+    const lastNameValue = lastName.value.trim();
+    const emailValue = email.value.trim();
+    const phoneValue = phone.value.trim();
+    const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
+
+
+     
+     
+    if(firstNameValue === '') {
+        setError(firstName, 'First name is required');
+    } else {
+        setSuccess(firstName);
+        count ++;
+    }
+
+    if(lastNameValue === '') {
+        setError(lastName, 'Last name is required');
+    } else {
+        setSuccess(lastName);
+        count ++;
+    }
+
+    if(emailValue === '') {
+        setError(email, 'Email is required');
+    } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Provide a valid email address');
+    } else {
+        setSuccess(email);
+        count ++;
+    }
+
+    if(phoneValue === '') {
+        setError(phone, 'Phone number is required');
+    } else if (phoneValue.length < 9){
+
+    //} else if ((phoneValue.length() < 10 && phoneValue >= 400000000 && phoneValue <= 499999999)) {
+       setError(phone, 'Phone number must be at least 10 digits.');
+    } else {
+        setSuccess(phone);
+        count ++;
+    }
+
+
+    if(passwordValue === '') {
+        setError(password, 'Password is required');
+    } else if (passwordValue.length < 8 ) {
+        setError(password, 'Password must be at least 8 character.')
+    } else {
+        setSuccess(password);
+        count ++;
+    }
+
+    if(password2Value === '') {
+        setError(password2, 'Please confirm your password');
+    } else if (password2Value !== passwordValue) {
+        setError(password2, "Passwords do not match");
+    } else {
+        setSuccess(password2);
+        count ++;
+    }
+
+
+// writing string data to local storage
+localStorage.setItem('first-name', firstNameValue);
+            localStorage.setItem('last-name', lastNameValue);
+            localStorage.setItem('email', emailValue);
+            localStorage.setItem('phone', phoneValue);
+
+    if (count === 6) {
+    window.location.href = 'main.html';
+    }
+};
+
+
+
+    </script> 
 
 </body>
 </html>
