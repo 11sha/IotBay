@@ -63,8 +63,8 @@
             </td>
         </table>
         <div class="gender-details">
-            <input type="radio" name="gender" id="dot-male" >
-            <input type="radio" name="gender" id="dot-female"  >
+            <input type="radio" name="gender" id="dot-male" value="male">
+            <input type="radio" name="gender" id="dot-female" value="female" >
             <span class="gender-title">Gender</span>
             <div class="category">
                 <label for="dot-male">
@@ -75,8 +75,8 @@
                     <span class="dot two"></span>
                     <span class="gender">Female</span>
                 </label>
-                <div class="checkbox">
-                    <label for="checkbox"> I agree to the&nbsp;<a href="terms_and_conditions.html" target="_blank">Terms and Conditions</a>.<input id="checkbox" type="checkbox" /></label>
+                <div class="checkbox-container">
+                    <label for="checkbox"> I agree to the&nbsp;<a href="terms_and_conditions.html" target="_blank">Terms and Conditions</a>.<input id="checkbox1" type="checkbox" /></label>
                     </div>
             </div>
             <div class="error"></div>
@@ -89,171 +89,7 @@
 
 
 
-<!--
-<body class="register">
-    <div class="top-bar">
-        <img id="logo-button" src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;" onclick="window.location.href = 'index.html';" >
-    </div>
-    <div class= "register-container">
-        <h2>Registration</h2>
-        <form id="form" class="register-form"> don't want to use get for passwords its not safe // No worries :) JM
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">First Name</span>
-                    <input id="firstName" type="text" placeholder="Enter your first name" >
-                    <div class="error"></div>
-                </div>
-                <div class="input-box">
-                    <span class="details">Last Name</span>
-                    <input id="lastName" type="text" placeholder="Enter your last name" >
-                    <div class="error"></div>
-                </div>
-                <div class="input-box">
-                     <span class="details">Email </span>
-                    <label for="email">Email </label>
-                    <input id="email" type="text" placeholder="Enter your email address" maxlength = "40" >
-                     email type changed from email to text for now as email type has limited customisation
-                            <div class="error"></div>
-                </div>
-                <div class="input-box">
-                    <span class="details">Password</span>
-                    <input id="password" type="password" placeholder="Enter your password" >
-                    <div class="error"></div>
-                </div>
-                <div class="input-box">
-                    <span class="details">Confirm Password</span>
-                    <input type="password" placeholder="Re-enter your password" >
-                    <div class="error"></div>
-                </div>
-                <div class="input-box">
-                    <span class="details">Phone Number</span>
-                    <input id="phone" type="number" placeholder="Enter your mobile number" min="0400000000" max="0499999999" maxlength="10" >
-                    <div class="error"></div>
-                </div>
-            </div>
-                <div class="gender-details">
-                    <input type="radio" name="gender" id="dot-male" >
-                    <input type="radio" name="gender" id="dot-female"  >
-                    <span class="gender-title">Gender</span>
-                    <div class="category">
-                        <label for="dot-male">
-                            <span class="dot one"></span>
-                            <span class="gender">Male</span>
-                        </label>
-                        <label for="dot-female">
-                            <span class="dot two"></span>
-                            <span class="gender">Female</span>
-                        </label>
-                    </div>
-                </div>
-             <div class="register-buttons">
-                <button id="register-button" type ="submit">Register</button>
-            </div> 
-            <button type ="submit">Register</button>
-    </form>
-</div> -->
-
-    <!-- PERI TEST (edited by James)-->
-   <script>
-    /*
-        const form = document.getElementById('form');
-        const firstName = document.getElementById('firstName');
-        const lastName = document.getElementById('lastName');
-        const email = document.getElementById('email');
-        const phone = document.getElementById('phone');
-        const password = document.getElementById('password');
-        const password2 = document.getElementById('password2');
-
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            validateInputs();
-
-        });
-
-        const setError = (element, message) => {
-            const inputControl = element.parentElement;
-            const errorDisplay = inputControl.querySelector('.error');
-
-            errorDisplay.innerText = message;
-            inputControl.classList.add('error');
-            inputControl.classList.remove('success')
-        }
-
-        const setSuccess = element => {
-            const inputControl = element.parentElement;
-            const errorDisplay = inputControl.querySelector('.error');
-
-            errorDisplay.innerText = '';
-            inputControl.classList.add('success');
-            inputControl.classList.remove('error');
-
-        };
-
-        const isValidEmail = email => {
-            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(String(email).toLowerCase());
-        }
-
-        const validateInputs = () => {
-
-            const firstNameValue = firstName.value.trim();
-            const lastNameValue = lastName.value.trim();
-            const emailValue = email.value.trim();
-            const phoneValue = phone.value.trim();
-            const passwordValue = password.value.trim();
-            const password2Value = password2.value.trim();
-
-            if(firstNameValue === '') {
-                setError(firstName, 'First name is required');
-            } else {
-                setSuccess(firstName);
-            }
-
-            if(lastNameValue === '') {
-                setError(lastName, 'Last name is required');
-            } else {
-                setSuccess(lastName);
-            }
-
-            if(emailValue === '') {
-                setError(email, 'Email is required');
-            } else if (!isValidEmail(emailValue)) {
-                setError(email, 'Provide a valid email address');
-            } else {
-                setSuccess(email);
-            }
-
-            if(passwordValue === '') {
-                setError(password, 'Password is required');
-            } else if (passwordValue.length < 8) {
-                setError(password, 'Password must be at least 8 characters.');
-            } else {
-                setSuccess(password);
-            }
-
-            if(password2Value === '') {
-                setError(password2, 'Please confirm your password');
-            } else if (password2Value !== passwordValue) {
-                setError(password2, 'Passwords do not match');
-            } else {
-                setSuccess(password);
-            }
-            
-            
-
-
-
-
-            // writing string data to local storage
-            localStorage.setItem('first-name', firstNameValue);
-            localStorage.setItem('last-name', lastNameValue);
-            localStorage.setItem('email', emailValue);
-            localStorage.setItem('phone', phoneValue);
-
-            window.location.href = 'main.html';
-        }; 
-        */
+<script>
 const form = document.getElementById('form');
 const firstName = document.getElementById('firstName');
 const lastName = document.getElementById('lastName');
@@ -263,16 +99,16 @@ const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 const dotMale = document.getElementById('dot-male');
 const dotFemale = document.getElementById('dot-female');
+const checkbox1 = document.getElementById('checkbox1');
 
-var count = 0;
+
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-
+    count = 0;
     validateInputs();
-   // validateGender();
+    validateCheckbox(checkbox1);
 });
-
 //dotMale.addEventListener('change', validateGender);
 //dotFemale.addEventListener('change', validateGender);
 
@@ -299,17 +135,27 @@ const isValidEmail = email => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }
-const validateGender= () => {
+/*const validateGender= () => {
     if (!dotMale.checked && !dotFemale.checked) {
         setError(dotMale, 'Gender is required');
         setError(dotFemale, '');
     } else {
-        setSuccess(genderMale);
-        setSuccess(genderFemale);
+        setSuccess(dotMale);
+        setSuccess(dotFemale);
         count ++;
     }
-};
+}; */
 
+const validateCheckbox = checkbox => {
+        checkbox.addEventListener('change', () => {
+if(!checkbox.checked) {
+  setError(checkbox, 'Please accept the terms and conditions');
+} else {
+  setSuccess(checkbox);
+  count++;
+}
+    });  
+}
 const validateInputs = () => {
     const firstNameValue = firstName.value.trim();
     const lastNameValue = lastName.value.trim();
@@ -373,6 +219,7 @@ const validateInputs = () => {
         setSuccess(password2);
         count ++;
     }
+    
 
 
 // writing string data to local storage
@@ -380,14 +227,13 @@ localStorage.setItem('first-name', firstNameValue);
             localStorage.setItem('last-name', lastNameValue);
             localStorage.setItem('email', emailValue);
             localStorage.setItem('phone', phoneValue);
-console.log(count);
-    if (count >= 6) {
+            console.log(count);
+    if (count >= 1) {
     window.location.href = 'main.html';
     } else {
         count = 0;
     }
 };
-
 
 
     </script> 
