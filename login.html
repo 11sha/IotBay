@@ -12,6 +12,7 @@
 </head>
 
 <body class="login" bgcolor= #cceeff>
+  <img id="logo-button" src="Photos/IoTBayLogo.png" alt="Logo" style=" width: 80px; float:left; " onclick="window.location.href = 'index.html';" >
     <div class= "login-wrapper">
       
       <h2>Login</h2>
@@ -20,41 +21,19 @@
         <input type= "text" name="password" name="userPassword" placeholder="password">
         <label for= "remember-check">
             <input type = "checkbox" id="remember-check"> remember me 
-            </label>
+
+          
     
+        
+        </label>
+      
             <input type = "submit" value = "Login" onclick = "window.location.href = 'main.html'">  
+            <label for="register-account">New to IoTBay?<a href ='register.html'> register</a></label> <br>
+
+            <label for = "forgot password">Forgot Password?<a href = "resetPw.html"> find password</a></label>
       </form>
     </div>
     
-    <script>
-
-      const id = document.getElementById('id');
-      const password = document.getElementById('password');
-      const login = document.getElementById('login');
-      let errStack = 0;
-  
-      login.addEventListener('click', () => 
-     { 
-      if (id.value == 'Group3') {
-          if (password.value == '1234') {
-              alert('login completed!');
-          }
-          else {
-              alert('please check your ID and PW again!');
-              errStack ++;
-          }
-      }
-      else {
-          alert('This account does not exist.');
-      }
-  
-      if (errStack >= 3) {
-          alert('You got the password wrong more than three times.');
-      }
-    })
-  
-  </script>
-  
   
   
 </body>
