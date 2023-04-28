@@ -37,8 +37,26 @@
             padding: 20px;
             background-color: #c8dce7;
             margin-top: 20px;
-            margin-bottom: 20px;
-        }
+            margin-bottom: 20px;}
+
+
+        .alternate-bar{
+           background-color: #72abc7;
+           color: white;
+           font-family: 'Inter', sans-serif;
+           text-align: center;
+           padding: 1px;
+           position:relative;
+           left: 0;
+           bottom: 0;
+           width: 100%;}
+		
+
+        .alternate-link {
+          color: white;
+          text-decoration:underline;
+         }
+        
 	</style>
 </head>
 <body>
@@ -77,11 +95,15 @@
 		<input type="submit" value="Submit">
 	</form>
     <h2>Alternatively, get in touch with us via either the email or phone number below:</h2>
-    <a href="mailto:support@iotbay.com.au">support@iotbay.com.au</a>
-   <br>
-	<a href="tel:+61426672018">(+61) 426672018</a>
-	<br>
-	<br>
+
+	
+	<div class="alternate-bar">
+		<p>Alternately, get in touch with us via either the email or phone number below:</p>
+		<a class="alternate-link" 
+		 href="mailto:support@iotbay.com.au">support@iotbay.com.au</a>
+		<br>
+		 <a href="tel:+61426672018">(+61) 426672018</a>
+	</div>
 
 </body>
 </html>

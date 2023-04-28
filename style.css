@@ -262,6 +262,24 @@
     font-size: 9px;
     height: 13px;
 }
+
+.support-bar {
+    background-color: #00498c;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.support-link {
+    color: white;
+    text-decoration: none;
+}
+
 /* Not used
 .register-buttons-container{ 
 position: absolute;
