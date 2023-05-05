@@ -20,6 +20,10 @@
     display: table;
     float:left;
 }
+.logo-container > img{
+    width: auto;
+    height: 80px;
+}
 .navigation{
     float:right;
     height:100%;
@@ -53,8 +57,16 @@ img{
     justify-content: flex-end;
     align-items: center;
 }
+.Landing_Picture{
+    padding-right: 10%;
+}
+.Landing_Picture > img{
+    height:auto;
+    width:auto;
+}
 .text{
     flex-basis: 600px;
+    margin-left:40px;
 }
 .bodycontainer{
     display: flex;
